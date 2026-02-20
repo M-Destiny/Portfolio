@@ -1,74 +1,82 @@
-# React + TypeScript + Vite
+# 🚀 Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A premium, award-winning 3D portfolio website showcasing my work as a Full Stack Developer.
 
-Currently, two official plugins are available:
+![Portfolio](https://img.shields.io/badge/Made%20with-React%20Three%20Fiber-purple)
+![Vercel](https://img.shields.io/badge/Deployed%20on-Vercel-black)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## ✨ Features
 
-## React Compiler
+- **Immersive 3D Hero** - Animated floating shapes with post-processing effects
+- **Glass Morphism** - Modern frosted glass UI elements
+- **Smooth Animations** - Framer Motion throughout
+- **Auto-fetched Projects** - GitHub API integration
+- **Fully Responsive** - Works on all devices
+- **Performance Optimized** - 60fps target
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🛠️ Tech Stack
 
-## Expanding the ESLint configuration
+- **Frontend:** React + TypeScript + Vite
+- **3D:** Three.js, React Three Fiber, @react-three/drei
+- **Post-processing:** @react-three/postprocessing
+- **Animation:** Framer Motion
+- **Styling:** Tailwind CSS
+- **Deployment:** Vercel
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## 🚀 Live Demo
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+**[portfolio-m-destiny.vercel.app](https://portfolio-m-destiny.vercel.app)**
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+## 🏗️ Architecture
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```
+src/
+├── components/
+│   └── 3d/
+│       └── HeroScene.tsx    # 3D hero with particles & effects
+├── App.tsx                 # Main app with all sections
+├── index.css              # Global styles & animations
+└── main.tsx              # Entry point
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## 🧑‍💻 Sections
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+1. **Hero** - 3D animated scene with floating objects
+2. **About** - Bio & stats
+3. **Work** - GitHub projects (auto-fetched)
+4. **Skills** - Tech stack
+5. **Contact** - Social links & CTA
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+## 🔧 Setup
+
+```bash
+# Install dependencies
+npm install
+
+# Development
+npm run dev
+
+# Build
+npm run build
 ```
-trigger
+
+## 🌿 Branches
+
+- `main` - Production
+- `dev` - Development
+
+## 📝 Development Workflow
+
+1. Create feature branch from `dev`
+2. Make changes
+3. Push and create PR
+4. Merge to `dev` → test
+5. Merge `dev` to `main` for production
+
+## 🔐 License
+
+MIT
+
+---
+
+Built with 💜 using React Three Fiber & Framer Motion
